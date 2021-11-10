@@ -10,7 +10,6 @@ jobs:
             command: |
               chmod +x .circleci/upload_server.sh
               ./.circleci/upload_server.sh
-
 workflows:
   version: 2
   build_and_test:
