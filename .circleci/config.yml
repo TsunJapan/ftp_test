@@ -3,13 +3,13 @@ jobs:
   build:
     docker:
       - image: buildpack-deps:scm
-    steps:
-      - checkout
-      - run:
-        name: Upload server
-        command: |
-          chmod +x .circleci/upload_server.sh
-          ./.circleci/upload_server.sh
+        steps:
+          - checkout
+          - run:
+            name: Upload server
+            command: |
+              chmod +x .circleci/upload_server.sh
+              ./.circleci/upload_server.sh
 
 workflows:
   version: 2
