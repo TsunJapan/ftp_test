@@ -6,10 +6,10 @@ jobs:
     steps:
       - checkout
       - run:
-    name: Upload server
-    command: |
-      chmod +x .circleci/upload_server.sh
-      ./.circleci/upload_server.sh
+        name: Upload server
+        command: |
+          chmod +x .circleci/upload_server.sh
+          ./.circleci/upload_server.sh
 
 workflows:
   version: 2
