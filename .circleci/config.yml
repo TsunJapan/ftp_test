@@ -8,8 +8,8 @@ jobs:
  - run:
  name: Upload server
  command: |
- chmod +x .circleci/upload_server.sh
- ./.circleci/upload_server.sh
+ 'chmod +x .circleci/upload_server.sh'
+ './.circleci/upload_server.sh'
 
 workflows:
  version: 2
